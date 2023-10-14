@@ -1,0 +1,241 @@
+/* common */
+.is_pink {
+  color: var(--pink) !important;
+}
+/* color */
+:root {
+  --black: #000;
+  --white: #fff;
+  --pink: #d4a6b5;
+  --border-pink: #f0dfe5;
+  --light-pink: #f6edf0;
+  --gray: #aeadad;
+  --light-black: #5d5b5b;
+  --header-color: #fbfbfb;
+}
+.form__search {
+  text-align: end;
+}
+.form__search input[type="text"] {
+  width: 300px;
+  padding: 0 1.2rem !important;
+  line-height: 4rem;
+  border: 1px solid var(--border-pink);
+  border-radius: 4px;
+}
+#account h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 5rem 0;
+  text-transform: capitalize;
+}
+#account .account__form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding: 3.2rem;
+  border: 1px solid var(--border-pink);
+  border-radius: 4px;
+}
+.login__forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+#account .account__form a {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+#account .account__form a:hover {
+  color: var(--pink);
+}
+#account label {
+  margin-bottom: 0.4em;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#account label span {
+  color: red;
+}
+#account input {
+  margin-bottom: 1.6rem;
+  padding: 1.2rem;
+  border: 1px solid var(--border-pink);
+}
+.login__save--pass {
+  color: var(--light-black);
+}
+.login__save--pass input,
+.login__save--pass label {
+  cursor: pointer;
+}
+#account input[type="submit"],
+#account button[type="submit"] {
+  display: inline-block;
+  width: 120px;
+  padding: 1.2rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0;
+}
+#account input[type="submit"]:hover {
+  background-color: var(--pink);
+}
+.account__admin {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+.account__admin--nav {
+}
+.account__admin--nav ul {
+  list-style: none;
+  border: 1px solid var(--border-pink);
+  border-top: none;
+}
+.account__admin--nav ul li {
+  border-top: 1px solid var(--border-pink);
+}
+.account__admin--nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.2rem 2.4rem;
+  transition: all 0.3s ease-in-out;
+}
+.account__admin--nav ul li a:hover {
+  color: var(--pink);
+}
+.account__admin--info {
+  display: flex;
+  flex-direction: column;
+}
+input#admin__name--account {
+  margin-bottom: 0;
+}
+.account__admin--info i {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--light-black);
+  margin-bottom: 1.6rem;
+}
+.account__admin--info p {
+  font-size: 1.4rem;
+  color: var(--light-black);
+}
+.account__admin--info hr {
+  border: 0.5px solid var(--border-pink);
+  margin: 2rem 0;
+}
+.account__admin--info button {
+  display: inline-block;
+  width: 120px;
+  padding: 1.2rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.account__admin--info button:hover {
+  background-color: var(--pink);
+}
+.admin__name {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: center;
+  gap: 4rem;
+}
+.admin__name--container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.account__order--history {
+  font-size: 1.4rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end; */
+}
+.account__order--history table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.account__order--history thead {
+  border: 1px solid var(--border-pink);
+  border-bottom: none;
+}
+.account__order--history thead tr {
+  background-color: var(--header-color);
+  font-weight: 700;
+}
+.account__order--history tbody {
+  color: var(--light-black);
+  border: 1px solid var(--border-pink);
+  border-top: none;
+}
+.account__order--history tbody tr {
+  border-top: 1px solid var(--border-pink);
+}
+.account__order--history tbody td {
+  border-left: 1px solid var(--border-pink);
+  line-height: 1.2;
+}
+.account__order--history tbody td:first-child {
+  border-left: none;
+  font-weight: 700;
+}
+.account__order--history tr {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  align-items: stretch;
+}
+.account__order--history th,
+.account__order--history td {
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.account__order--history th:last-child,
+.account__order--history td:last-child {
+  justify-content: center;
+}
+.account__order--history button {
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.account__order--history button:hover {
+  background-color: var(--pink);
+}
+.account__order--history .account__order--btnview {
+  color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+.account__order--history .account__order--btnview:hover {
+  color: var(--pink);
+}
+.account__address h3 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}

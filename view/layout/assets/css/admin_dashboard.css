@@ -1,0 +1,84 @@
+/* color */
+:root {
+  --black: #000;
+  --white: #fff;
+  --pink: #d4a6b5;
+  --border-pink: #f0dfe5;
+  --light-pink: #f6edf0;
+  --gray: #aeadad;
+  --light-black: #5d5b5b;
+  --header-color: #fbfbfb;
+}
+.admin__dashboard--user {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.admin__dashboard--user--avatar {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.admin__dashboard--user--avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.admin__dashboard--user--info h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--light-black);
+  margin-bottom: 0.8rem;
+}
+.admin__dashboard--user--info p {
+  color: var(--pink);
+  font-weight: bold;
+  font-style: italic;
+}
+.account__order--history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+.admin__dashboard--title {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  background-color: var(--light-pink);
+  border-radius: 1rem;
+}
+.admin__dashboard--title span {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--light-black);
+}
+.admin__dashboard--content p {
+  font-weight: bold;
+  color: var(--light-black);
+}
+.admin__dashboard--content h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.admin__dashboard--detail {
+  margin-top: 2.4rem;
+}
+.admin__dashboard--show {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

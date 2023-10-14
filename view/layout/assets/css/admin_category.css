@@ -1,0 +1,54 @@
+/* color */
+:root {
+  --black: #000;
+  --white: #fff;
+  --pink: #d4a6b5;
+  --border-pink: #f0dfe5;
+  --light-pink: #f6edf0;
+  --gray: #aeadad;
+  --light-black: #5d5b5b;
+  --header-color: #fbfbfb;
+}
+.account__admin {
+  grid-template-columns: 1fr 3fr;
+}
+.account__order--history tr {
+  grid-template-columns: 1.5fr 1fr;
+}
+.account__order--history td {
+  gap: 1.6rem;
+}
+.add__category {
+  display: block;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 1.2rem 2rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.add__category:hover {
+  background: var(--pink);
+}
+.account__order--history td {
+  gap: 1.2rem;
+}
+.account__order--history .account__product,
+.account__order--history button {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--light-black);
+  padding: 0;
+  background-color: var(--white);
+}
+.account__order--history .account__product:hover,
+.account__order--history button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+#footer {
+  margin-top: 5rem;
+}
